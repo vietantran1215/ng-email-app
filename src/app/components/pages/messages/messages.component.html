@@ -1,0 +1,10 @@
+<div [ngClass]="['email-container']">
+  <app-email-box></app-email-box>
+  <div [ngClass]="['email-main']">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div [ngClass]="['container-fluid', 'email-content-container']">
+  <app-email-content></app-email-content>
+</div>

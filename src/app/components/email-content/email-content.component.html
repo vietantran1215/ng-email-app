@@ -1,0 +1,22 @@
+<div *ngIf="message._id">
+  <div [ngClass]="['row', 'email-content-header']">
+    <div [ngClass]="['col-8']">
+      <h3>{{message.subject}}</h3>
+      <p>
+        {{message.senderName.first}} {{message.senderName.last}} {{message.from}}
+        <i [ngClass]="['fa', 'fa-long-arrow-right']"></i>
+        {{message.to}}
+      </p>
+    </div>
+    <div [ngClass]="['col', 'text-right']">
+      <p>{{message.date | date:'medium'}}</p>
+      <button [ngClass]="['btn', 'btn-primary', 'email-option']"><i [ngClass]="['fa', 'fa-reply']"></i> Reply</button>
+      <button [ngClass]="['btn', 'btn-primary', 'email-option']"><i [ngClass]="['fa', 'fa-forward']"></i> Forward</button>
+      <button [ngClass]="['btn', 'btn-primary', 'email-option']"><i [ngClass]="['fa', 'fa-times']"></i> Delete</button>
+    </div>
+  </div>
+  <div [ngClass]="['email-content-text']">
+    {{message.body}}
+  </div>
+</div>
+

@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+.app-btn {
+  margin: 5px;
+}
+
+.email-box {
+  /* position: fixed; */
+  height: 100%;
+  list-style-type: none;
+  background-color: #f1f1f1;
+  padding-left: 0;
+  padding-top: 30px;
+  width: 115px;
+}
+
+.email-container {
+  display: flex;
+  border: 1px solid #f1f1f1;
+}
+
+.email-box-link {
+  color: #000;
+  display: block;
+  padding: 3px 0;
+  padding-left: 20px;
+}
+
+.email-box-link:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.email-box-active {
+  background-color: #007bff;
+  color: #fff !important;
+}
+
+.email-main {
+  /* margin-left: 115px; */
+  width: 100%;
+}
+
+.email-option {
+  margin: 0 5px;
+}
+
+.email-content-container {
+  padding: 0 30px;
+}
+
+.email-content-header {
+  padding: 20px 0;
+  background: #c4c4c4;
+}
+
+.user-select {
+  border: none;
+  outline: none;
+}
+
+.email-content-text {
+  padding: 15px 0;
+}

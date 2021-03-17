@@ -1,0 +1,7 @@
+<ul [ngClass]="['email-box']">
+  <li [ngClass]="['email-box-nav']" *ngFor="let folder of folders">
+    <a [ngClass]="['email-box-link', currentfolder === folder ? 'email-box-active' : '']" [routerLink]="[folder]"><i [ngClass]="['fa', currentfolder === folder ? 'fa-folder-open-o': 'fa-folder-o']"></i> {{ folder }}</a>
+  </li>
+</ul>
+
+

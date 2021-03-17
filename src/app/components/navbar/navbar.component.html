@@ -1,0 +1,24 @@
+<div>
+  <ul [ngClass]="['nav', 'nav-tabs', 'position-relative']">
+    <li [ngClass]="'nav-item'">
+      <a [ngClass]="['nav-link', 'active']" routerLink="/messages">Messages</a>
+    </li>
+    <li [ngClass]="'nav-item'">
+      <a [ngClass]="'nav-link'" routerLink="/contacts">Contacts</a>
+    </li>
+    <li [ngClass]="'nav-item'">
+      <a [ngClass]="'nav-link'" routerLink="/preferences">Preferences</a>
+    </li>
+    <div [ngClass]="['d-inline', 'position-absolute']" [ngStyle]="{'right': '30px', 'bottom': '5px'}">
+      <select [ngClass]="['dropdown-toggle', 'user-select']" [(ngModel)]="currentUser" (ngModelChange)="select($event)">
+        <option *ngFor="let user of users" [value]="user">{{user}}</option>
+      </select>
+      <button [ngClass]="['app-btn', 'btn', 'btn-primary']">
+        <i [ngClass]="['fa', 'fa-home']" aria-hidden="true"></i>
+      </button>
+      <button [ngClass]="['app-btn', 'btn', 'btn-primary']">
+        <i [ngClass]="['fa', 'fa-envelope']" aria-hidden="true"></i> New Message
+      </button>
+    </div>
+  </ul>
+</div>
